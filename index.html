@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>For Mawar ❤️</title>
+<style>
+body{
+font-family: Arial;
+text-align:center;
+background:#fff0f5;
+}
+button{
+padding:10px 20px;
+font-size:18px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Misi Rahasia Untuk Mawar 💌</h1>
+
+<p id="text">Hai Mawar Sayang 😊</p>
+
+<button onclick="next()">Lanjut 👉</button>
+
+<script>
+const messages = [
+"Hai Mawar Sayang 😊",
+"Iya kamu, Mawar yang paling manis itu...",
+"Coba senyum dulu dong...",
+"Nah gitu, Mawar cantik banget 💖"
+];
+
+let step = 0;
+
+function next(){
+step++;
+if(step < messages.length){
+document.getElementById("text").innerText = messages[step];
+}
+}
+</script>
+
+</body>
+</html>
